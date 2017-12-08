@@ -12,6 +12,10 @@ class ProductGroupViewController: UIViewController, UITableViewDelegate, UITable
 
     let list = ["Hello", "yo", "greetings", "meh"]
     
+    var selection = ""
+    
+    @IBOutlet var headerLabel: UILabel!
+    
     
     @IBOutlet var tableView: UITableView!
     
@@ -20,6 +24,7 @@ class ProductGroupViewController: UIViewController, UITableViewDelegate, UITable
     var productOne = Product(name: "Hammer", description: "For hitting stuff", price: "Not too much", image : #imageLiteral(resourceName: "hurricane"))
     var productTwo = Product(name: "Shovel", description: "For digging", price: "Decent amount", image : #imageLiteral(resourceName: "hurricane"))
     var productThree = Product(name: "Rake", description: "To ruin your saturday", price: "Your spirit", image : #imageLiteral(resourceName: "hurricane"))
+    
     
     
     
@@ -33,6 +38,8 @@ class ProductGroupViewController: UIViewController, UITableViewDelegate, UITable
         self.tableView.delegate = self
         
         self.productArray = [self.productOne, self.productTwo, self.productThree]
+        
+        self.headerLabel.text = self.selection
         
         
     }

@@ -117,24 +117,29 @@
                                     <action selector="backButtonPressed:" destination="gAT-Vf-TxS" eventType="touchUpInside" id="dFW-AY-IA8"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H25-Uv-3ez">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H25-Uv-3ez">
                                 <rect key="frame" x="42.5" y="75" width="140" height="140"/>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="41s-Rm-VoV"/>
                                     <constraint firstAttribute="height" constant="140" id="ko7-Ks-Oxl"/>
                                 </constraints>
+                                <state key="normal" image="hurricane"/>
                                 <connections>
-                                    <segue destination="rm7-SE-4H8" kind="show" id="TfR-x7-YT1"/>
+                                    <action selector="hurricaneButtonPressed:" destination="gAT-Vf-TxS" eventType="touchUpInside" id="LcU-7W-but"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpH-7i-6BT">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpH-7i-6BT">
                                 <rect key="frame" x="192.5" y="75" width="140" height="140"/>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="ZId-Fh-LTX"/>
                                     <constraint firstAttribute="height" constant="140" id="acf-1W-DdX"/>
                                 </constraints>
+                                <state key="normal" image="fire"/>
+                                <connections>
+                                    <action selector="fireButtonPressed:" destination="gAT-Vf-TxS" eventType="touchUpInside" id="oKr-hx-7Jz"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hurricane" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfx-bf-wxJ">
                                 <rect key="frame" x="42.5" y="215" width="140" height="21"/>
@@ -156,21 +161,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-Jm-4ya">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBI-Jm-4ya">
                                 <rect key="frame" x="42" y="241" width="140" height="140"/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="64e-Th-ifK"/>
                                     <constraint firstAttribute="width" constant="140" id="mCB-o5-CRa"/>
                                 </constraints>
+                                <state key="normal" image="flood"/>
+                                <connections>
+                                    <action selector="floodButtonPressed:" destination="gAT-Vf-TxS" eventType="touchUpInside" id="Bjr-N3-s1p"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNN-Yc-ghf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sNN-Yc-ghf">
                                 <rect key="frame" x="192" y="241" width="140" height="140"/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="3vg-vk-gHG"/>
                                     <constraint firstAttribute="width" constant="140" id="qZm-Zl-jPz"/>
                                 </constraints>
+                                <state key="normal" image="earthquake"/>
+                                <connections>
+                                    <action selector="earthquakeButtonPressed:" destination="gAT-Vf-TxS" eventType="touchUpInside" id="LS1-ym-x78"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wyt-Rs-lrA">
                                 <rect key="frame" x="42" y="381" width="140" height="21"/>
@@ -192,21 +205,29 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfv-DN-S02">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfv-DN-S02">
                                 <rect key="frame" x="42" y="407" width="140" height="140"/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="PMd-zb-uDW"/>
                                     <constraint firstAttribute="width" constant="140" id="cx2-6H-926"/>
                                 </constraints>
+                                <state key="normal" image="tornado"/>
+                                <connections>
+                                    <action selector="tornadoButtonPressed:" destination="gAT-Vf-TxS" eventType="touchUpInside" id="kLj-at-i73"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBA-Xs-LEO">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBA-Xs-LEO">
                                 <rect key="frame" x="192" y="407" width="140" height="140"/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="QLt-yR-dLo"/>
                                     <constraint firstAttribute="height" constant="140" id="xeN-JM-ffs"/>
                                 </constraints>
+                                <state key="normal" image="tsunami"/>
+                                <connections>
+                                    <action selector="tsunamiButtonPressed:" destination="gAT-Vf-TxS" eventType="touchUpInside" id="dCu-d9-OJj"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tornado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Phb-85-Q9h">
                                 <rect key="frame" x="42" y="547" width="140" height="21"/>
@@ -404,6 +425,7 @@
                         <viewLayoutGuide key="safeArea" id="OAR-17-zDk"/>
                     </view>
                     <connections>
+                        <outlet property="headerLabel" destination="PcR-BH-t8e" id="TO6-bM-IN4"/>
                         <outlet property="tableView" destination="nac-2M-zp4" id="bpD-7Z-Clu"/>
                         <segue destination="2oF-TJ-ktd" kind="show" identifier="itemSelectedSegue" id="35L-Jr-mzd"/>
                         <segue destination="gAT-Vf-TxS" kind="show" identifier="returnToEventTypeSegue" id="oJ3-nr-fT3"/>
@@ -525,9 +547,16 @@
             <point key="canvasLocation" x="2525.5999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="earthquake" width="570" height="288"/>
+        <image name="fire" width="900" height="675"/>
+        <image name="flood" width="1180" height="842"/>
+        <image name="hurricane" width="1280" height="1024"/>
+        <image name="tornado" width="1210" height="680"/>
+        <image name="tsunami" width="800" height="530"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="35L-Jr-mzd"/>
-        <segue reference="bGW-zS-cN2"/>
+        <segue reference="RVu-4I-WD7"/>
         <segue reference="oJ3-nr-fT3"/>
     </inferredMetricsTieBreakers>
 </document>

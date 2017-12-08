@@ -18,13 +18,6 @@ class EventTypeViewController: UIViewController {
     @IBOutlet var tsunamiButton: UIButton!
     
     
-    
-    
-    
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,6 +32,60 @@ class EventTypeViewController: UIViewController {
     @IBAction func backButtonPressed(_ sender: UIButton) {
         self.performSegue(withIdentifier: "returnToStartSegue", sender: self)
     }
+    
+    @IBAction func hurricaneButtonPressed(_ sender: Any) {
+        self.selectionString = "Hurricane"
+        self.performSegue(withIdentifier: "productGroupSelectedSegue", sender: self)
+    }
+    
+    @IBAction func fireButtonPressed(_ sender: Any) {
+        self.selectionString = "Fire"
+        self.performSegue(withIdentifier: "productGroupSelectedSegue", sender: self)
+    }
+    
+    @IBAction func floodButtonPressed(_ sender: Any) {
+        self.selectionString = "Flood"
+        self.performSegue(withIdentifier: "productGroupSelectedSegue", sender: self)
+    }
+    
+    @IBAction func earthquakeButtonPressed(_ sender: Any) {
+        self.selectionString = "Earthquake"
+        self.performSegue(withIdentifier: "productGroupSelectedSegue", sender: self)
+    }
+    
+    @IBAction func tornadoButtonPressed(_ sender: Any) {
+        self.selectionString = "Tornado"
+        self.performSegue(withIdentifier: "productGroupSelectedSegue", sender: self)
+    }
+    
+    @IBAction func tsunamiButtonPressed(_ sender: Any) {
+        self.selectionString = "Tsunami"
+        self.performSegue(withIdentifier: "productGroupSelectedSegue", sender: self)
+    }
+    
+    
+    
+    var selectionString = ""
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "productGroupSelectedSegue" {
+            let destinationVC : ProductGroupViewController = segue.destination as! ProductGroupViewController
+            destinationVC.selection = self.selectionString
+        }
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 
 
