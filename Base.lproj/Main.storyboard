@@ -307,6 +307,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="backButtonPressed:" destination="rm7-SE-4H8" eventType="touchUpInside" id="QUK-65-8RC"/>
                                     <action selector="backButtonPressed:" destination="gAT-Vf-TxS" eventType="touchUpInside" id="lBA-9P-5v2"/>
                                 </connections>
                             </button>
@@ -419,13 +420,57 @@
                     <view key="view" contentMode="scaleToFill" id="3cH-Fl-fO3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QKh-3B-Mcn">
+                                <rect key="frame" x="62" y="5" width="250" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="dXw-Hr-5DE"/>
+                                    <constraint firstAttribute="height" constant="250" id="edt-Ud-naB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Skg-n2-ZPN">
+                                <rect key="frame" x="132" y="260" width="110" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6GX-Qo-1x2">
+                                <rect key="frame" x="5" y="312" width="365" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isb-Qc-6R1">
+                                <rect key="frame" x="166.5" y="338" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6GX-Qo-1x2" firstAttribute="top" secondItem="Skg-n2-ZPN" secondAttribute="bottom" constant="31" id="6Ie-Ly-eMW"/>
+                            <constraint firstItem="isb-Qc-6R1" firstAttribute="centerX" secondItem="71h-0I-mw1" secondAttribute="centerX" id="FtA-zc-tCm"/>
+                            <constraint firstItem="QKh-3B-Mcn" firstAttribute="centerX" secondItem="71h-0I-mw1" secondAttribute="centerX" id="IKU-jN-B5R"/>
+                            <constraint firstItem="6GX-Qo-1x2" firstAttribute="leading" secondItem="71h-0I-mw1" secondAttribute="leading" constant="5" id="L6y-FD-lU4"/>
+                            <constraint firstItem="isb-Qc-6R1" firstAttribute="top" secondItem="6GX-Qo-1x2" secondAttribute="bottom" constant="5" id="TVO-vX-I8F"/>
+                            <constraint firstItem="Skg-n2-ZPN" firstAttribute="centerX" secondItem="71h-0I-mw1" secondAttribute="centerX" id="Yxf-zp-lfy"/>
+                            <constraint firstItem="71h-0I-mw1" firstAttribute="trailing" secondItem="6GX-Qo-1x2" secondAttribute="trailing" constant="5" id="any-ap-NE2"/>
+                            <constraint firstItem="Skg-n2-ZPN" firstAttribute="top" secondItem="QKh-3B-Mcn" secondAttribute="bottom" constant="5" id="mGQ-5C-qhi"/>
+                            <constraint firstItem="QKh-3B-Mcn" firstAttribute="top" secondItem="3cH-Fl-fO3" secondAttribute="top" constant="5" id="oAC-gf-6EK"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="71h-0I-mw1"/>
                     </view>
+                    <connections>
+                        <outlet property="productDescriptionLabel" destination="6GX-Qo-1x2" id="Vq9-dM-oiX"/>
+                        <outlet property="productImageView" destination="QKh-3B-Mcn" id="acm-LE-Dyz"/>
+                        <outlet property="productNameLabel" destination="Skg-n2-ZPN" id="68w-KE-QkT"/>
+                        <outlet property="productPriceLabel" destination="isb-Qc-6R1" id="Od3-Cd-J7H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibl-1D-dQg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2527" y="134"/>
+            <point key="canvasLocation" x="2525.5999999999999" y="133.5832083958021"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

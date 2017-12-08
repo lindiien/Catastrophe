@@ -22,6 +22,8 @@ class ProductGroupViewController: UIViewController, UITableViewDelegate, UITable
     var productThree = Product(name: "Rake", description: "To ruin your saturday", price: "Your spirit")
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -38,6 +40,11 @@ class ProductGroupViewController: UIViewController, UITableViewDelegate, UITable
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    
+    @IBAction func backButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "returnToEventTypeSegue", sender: self)
     }
     
     
