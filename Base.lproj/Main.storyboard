@@ -405,7 +405,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="nac-2M-zp4" id="bpD-7Z-Clu"/>
-                        <segue destination="2oF-TJ-ktd" kind="show" id="35L-Jr-mzd"/>
+                        <segue destination="2oF-TJ-ktd" kind="show" identifier="itemSelectedSegue" id="35L-Jr-mzd"/>
                         <segue destination="gAT-Vf-TxS" kind="show" identifier="returnToEventTypeSegue" id="oJ3-nr-fT3"/>
                     </connections>
                 </viewController>
@@ -526,6 +526,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="35L-Jr-mzd"/>
         <segue reference="bGW-zS-cN2"/>
         <segue reference="oJ3-nr-fT3"/>
     </inferredMetricsTieBreakers>
