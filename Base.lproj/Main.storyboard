@@ -440,7 +440,7 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnD-df-yMO">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VnD-df-yMO">
                                                             <rect key="frame" x="110" y="31" width="236" height="21"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                             <nil key="textColor"/>
@@ -453,7 +453,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="NmY-0H-ZCo" firstAttribute="top" secondItem="vtC-86-FEa" secondAttribute="top" constant="5" id="4nY-O6-5Vz"/>
                                                         <constraint firstItem="VnD-df-yMO" firstAttribute="top" secondItem="9Bh-Lw-v1z" secondAttribute="bottom" constant="5" id="FID-a7-DmX"/>
@@ -549,13 +549,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeO-Xd-jsV">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OeO-Xd-jsV">
                                 <rect key="frame" x="32.5" y="444" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="c7q-5k-6fo"/>
                                     <constraint firstAttribute="height" constant="150" id="cKA-Bg-K6C"/>
                                 </constraints>
+                                <state key="normal" image="pickup"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's coming?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uk9-BS-S2P">
                                 <rect key="frame" x="10" y="20" width="355" height="50"/>
@@ -584,13 +585,14 @@
                                     <segue destination="rm7-SE-4H8" kind="show" identifier="returnToProductOfferingSegue" id="bGW-zS-cN2"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sek-yL-awS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sek-yL-awS">
                                 <rect key="frame" x="192.5" y="444" width="150" height="150"/>
                                 <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="150" id="LSC-ut-lu3"/>
                                     <constraint firstAttribute="width" constant="150" id="gPS-ZF-qnf"/>
                                 </constraints>
+                                <state key="normal" image="delivery"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -629,15 +631,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="delivery" width="500" height="504"/>
         <image name="earthquake" width="570" height="288"/>
         <image name="fire" width="900" height="675"/>
         <image name="flood" width="1180" height="842"/>
         <image name="hurricane" width="1280" height="1024"/>
+        <image name="pickup" width="522" height="520"/>
         <image name="tornado" width="1210" height="680"/>
         <image name="tsunami" width="800" height="530"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9zg-gr-3l6"/>
-        <segue reference="noX-CW-XWL"/>
+        <segue reference="bGW-zS-cN2"/>
+        <segue reference="oJ3-nr-fT3"/>
     </inferredMetricsTieBreakers>
 </document>

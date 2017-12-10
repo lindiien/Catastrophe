@@ -21,10 +21,12 @@ class ProductGroupViewController: UIViewController, UITableViewDelegate, UITable
     
     var productArray : [Product] = []
     
-    var productOne = Product(name: "Hammer", description: "For hitting stuff", price: "Not too much", image : #imageLiteral(resourceName: "hurricane"))
-    var productTwo = Product(name: "Shovel", description: "For digging", price: "Decent amount", image : #imageLiteral(resourceName: "hurricane"))
-    var productThree = Product(name: "Rake", description: "To ruin your saturday", price: "Your spirit", image : #imageLiteral(resourceName: "hurricane"))
-    
+    var productOne = Product(name: "Duracel Battery Pack", description: "Keep your devices online, flashlights are top priorities", price: "$11.99", image : #imageLiteral(resourceName: "Duracel"))
+    var productTwo = Product(name: "Niagara Water Pack", description: "Clean water may be cut off for extended periods. Be prepared, and keep it out of the sun. ", price: "$3.97", image : #imageLiteral(resourceName: "Water"))
+    var productThree = Product(name: "Lux-Pro Flashlight", description: "It's dark with no power. Don't be scared of the dark anymore.", price: "$14.97", image : #imageLiteral(resourceName: "flashlight"))
+    var productFour = Product(name: "Bayou Classic Stove", description: "Propare stove in case you need to cook or sterilize water without electricity.", price: "$59.97", image : #imageLiteral(resourceName: "stove"))
+    var productFive = Product(name: "First Aid Kit", description: "A lot of first aid essentials in one place. ", price: "$89.00", image : #imageLiteral(resourceName: "AidKit"))
+    var productSix = Product(name: "Goal Zero Solar Generator", description: "Keep vital functions running while you wait for government rebuild to complete.", price: "$699.99", image : #imageLiteral(resourceName: "generator"))
     
     
     
@@ -37,7 +39,7 @@ class ProductGroupViewController: UIViewController, UITableViewDelegate, UITable
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        self.productArray = [self.productOne, self.productTwo, self.productThree]
+        self.productArray = [self.productOne, self.productTwo, self.productThree, self.productFour, self.productFive, self.productSix]
         
         self.headerLabel.text = self.selection
         
