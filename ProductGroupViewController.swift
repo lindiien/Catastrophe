@@ -27,6 +27,7 @@ class ProductGroupViewController: UIViewController, UITableViewDelegate, UITable
     var productFour = Product(name: "Bayou Classic Stove", description: "Propare stove in case you need to cook or sterilize water without electricity.", price: "$59.97", image : #imageLiteral(resourceName: "stove"))
     var productFive = Product(name: "First Aid Kit", description: "A lot of first aid essentials in one place. ", price: "$89.00", image : #imageLiteral(resourceName: "AidKit"))
     var productSix = Product(name: "Goal Zero Solar Generator", description: "Keep vital functions running while you wait for government rebuild to complete.", price: "$699.99", image : #imageLiteral(resourceName: "generator"))
+    var productSeven = Product(name: "Wireless Chainsaw", description: "Wireless for powerless situations. Great for debris/street clearing", price: "$180.55", image: #imageLiteral(resourceName: "chainsaw"))
     
     
     
@@ -39,7 +40,7 @@ class ProductGroupViewController: UIViewController, UITableViewDelegate, UITable
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        self.productArray = [self.productOne, self.productTwo, self.productThree, self.productFour, self.productFive, self.productSix]
+        self.productArray = [self.productOne, self.productTwo, self.productThree, self.productSeven, self.productFour, self.productFive, self.productSix]
         
         self.headerLabel.text = self.selection
         

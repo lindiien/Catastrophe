@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uUh-Yg-k1G">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Current Bar" translatesAutoresizingMaskIntoConstraints="NO" id="uUh-Yg-k1G">
                                 <rect key="frame" x="20" y="50" width="335" height="300"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="300" id="nFl-2z-cHz"/>
@@ -34,7 +34,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Future" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uqj-qu-sZK">
-                                <rect key="frame" x="20" y="355" width="335" height="25"/>
+                                <rect key="frame" x="20" y="370" width="335" height="25"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="DUP-SG-BPZ"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Ub-RG-z5r">
-                                <rect key="frame" x="10" y="390" width="355" height="40"/>
+                                <rect key="frame" x="10" y="405" width="355" height="40"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8nd-22-TCD"/>
@@ -52,17 +52,25 @@
                                     <action selector="catastropheProgramSelected:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ymz-4B-Gs7"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="kav-2g-Mhp">
-                                <rect key="frame" x="10" y="390" width="355" height="40"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="currentFrame" translatesAutoresizingMaskIntoConstraints="NO" id="kav-2g-Mhp">
+                                <rect key="frame" x="10" y="405" width="305" height="40"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marshmellow" highlightedImage="marshmellow" translatesAutoresizingMaskIntoConstraints="NO" id="8Nz-Or-bwR">
+                                <rect key="frame" x="315" y="400" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="J82-9I-XGV"/>
+                                    <constraint firstAttribute="height" constant="50" id="kby-T2-O1r"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Uqj-qu-sZK" secondAttribute="trailing" constant="20" id="1KA-dl-UFU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="81o-aH-OgR" secondAttribute="trailing" constant="20" id="7LO-aP-CQq"/>
-                            <constraint firstItem="Uqj-qu-sZK" firstAttribute="top" secondItem="uUh-Yg-k1G" secondAttribute="bottom" constant="5" id="ADO-ae-y5h"/>
-                            <constraint firstItem="kav-2g-Mhp" firstAttribute="centerX" secondItem="8Ub-RG-z5r" secondAttribute="centerX" id="CAF-AW-iiy"/>
+                            <constraint firstItem="Uqj-qu-sZK" firstAttribute="top" secondItem="uUh-Yg-k1G" secondAttribute="bottom" constant="20" id="ADO-ae-y5h"/>
+                            <constraint firstItem="kav-2g-Mhp" firstAttribute="centerX" secondItem="8Ub-RG-z5r" secondAttribute="centerX" constant="-25" id="CAF-AW-iiy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uUh-Yg-k1G" secondAttribute="trailing" constant="20" id="J5h-No-hrR"/>
+                            <constraint firstItem="8Nz-Or-bwR" firstAttribute="centerY" secondItem="8Ub-RG-z5r" secondAttribute="centerY" id="KhC-DT-d7w"/>
                             <constraint firstItem="81o-aH-OgR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PnJ-SD-28N"/>
                             <constraint firstItem="kav-2g-Mhp" firstAttribute="centerY" secondItem="8Ub-RG-z5r" secondAttribute="centerY" id="QMo-F9-daN"/>
                             <constraint firstItem="uUh-Yg-k1G" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Tza-yh-ePm"/>
@@ -70,10 +78,11 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8Ub-RG-z5r" secondAttribute="trailing" constant="10" id="cjK-7g-yqB"/>
                             <constraint firstItem="8Ub-RG-z5r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="fbR-V7-8ZB"/>
                             <constraint firstItem="uUh-Yg-k1G" firstAttribute="top" secondItem="81o-aH-OgR" secondAttribute="bottom" constant="5" id="gDM-W0-5O0"/>
-                            <constraint firstItem="kav-2g-Mhp" firstAttribute="width" secondItem="8Ub-RG-z5r" secondAttribute="width" id="kC9-CN-k4D"/>
+                            <constraint firstItem="kav-2g-Mhp" firstAttribute="width" secondItem="8Ub-RG-z5r" secondAttribute="width" constant="-50" id="kC9-CN-k4D"/>
                             <constraint firstItem="Uqj-qu-sZK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="lIl-ej-O3z"/>
                             <constraint firstItem="kav-2g-Mhp" firstAttribute="height" secondItem="8Ub-RG-z5r" secondAttribute="height" id="q7b-Iq-bZb"/>
                             <constraint firstItem="8Ub-RG-z5r" firstAttribute="top" secondItem="Uqj-qu-sZK" secondAttribute="bottom" constant="10" id="sgJ-7f-YN5"/>
+                            <constraint firstItem="8Nz-Or-bwR" firstAttribute="leading" secondItem="kav-2g-Mhp" secondAttribute="trailing" id="v32-qM-rsB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -631,17 +640,20 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Current Bar" width="640" height="1136"/>
+        <image name="currentFrame" width="798" height="130"/>
         <image name="delivery" width="500" height="504"/>
         <image name="earthquake" width="570" height="288"/>
         <image name="fire" width="900" height="675"/>
         <image name="flood" width="1180" height="842"/>
         <image name="hurricane" width="1280" height="1024"/>
+        <image name="marshmellow" width="480" height="360"/>
         <image name="pickup" width="522" height="520"/>
         <image name="tornado" width="1210" height="680"/>
         <image name="tsunami" width="800" height="530"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="bGW-zS-cN2"/>
-        <segue reference="oJ3-nr-fT3"/>
+        <segue reference="RVu-4I-WD7"/>
+        <segue reference="Naz-Fy-RGL"/>
     </inferredMetricsTieBreakers>
 </document>
