@@ -42,6 +42,11 @@ class DisasterTypeViewController: UIViewController {
         self.performSegue(withIdentifier: "prepareButtonSegue", sender: self)
     }
     
+    @IBAction func recoverButtonPressed(_ sender: Any) {
+        self.performSegue(withIdentifier: "prepareButtonSegue", sender: self)
+    }
+    
+    
     
     
     func updateLabelsForSelection () {

@@ -55,7 +55,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="currentFrame" translatesAutoresizingMaskIntoConstraints="NO" id="kav-2g-Mhp">
                                 <rect key="frame" x="10" y="405" width="305" height="40"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="marshmellow" highlightedImage="marshmellow" translatesAutoresizingMaskIntoConstraints="NO" id="8Nz-Or-bwR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AaronsIdeaItWasBad" highlightedImage="marshmellow" translatesAutoresizingMaskIntoConstraints="NO" id="8Nz-Or-bwR">
                                 <rect key="frame" x="315" y="400" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="J82-9I-XGV"/>
@@ -349,10 +349,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4PX-Yo-c4N">
-                                <rect key="frame" x="87" y="106" width="200" height="50"/>
+                                <rect key="frame" x="32.5" y="106" width="150" height="50"/>
                                 <color key="backgroundColor" red="0.13437523849999999" green="0.62681809290000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="JXW-xW-Ehd"/>
+                                    <constraint firstAttribute="width" constant="150" id="JXW-xW-Ehd"/>
                                     <constraint firstAttribute="height" constant="50" id="Tbs-A1-htf"/>
                                 </constraints>
                                 <state key="normal" title="Prepare">
@@ -362,11 +362,28 @@
                                     <action selector="prepareButtonPressed:" destination="HSF-T4-1bI" eventType="touchUpInside" id="eqD-Dt-xmo"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DKP-Xq-BfG">
+                                <rect key="frame" x="192.5" y="106" width="150" height="50"/>
+                                <color key="backgroundColor" red="0.13437523849999999" green="0.62681809290000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="1Hm-RM-hzx"/>
+                                    <constraint firstAttribute="width" constant="150" id="Ub0-CU-7QB"/>
+                                </constraints>
+                                <state key="normal" title="Recover">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="prepareButtonPressed:" destination="HSF-T4-1bI" eventType="touchUpInside" id="S0u-5E-ghH"/>
+                                    <action selector="recoverButtonPressed:" destination="HSF-T4-1bI" eventType="touchUpInside" id="Qkz-sC-Mfb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="4PX-Yo-c4N" firstAttribute="centerX" secondItem="Vdy-Be-emk" secondAttribute="centerX" id="1Qj-ze-nL9"/>
+                            <constraint firstItem="4PX-Yo-c4N" firstAttribute="centerX" secondItem="Vdy-Be-emk" secondAttribute="centerX" constant="-80" id="1Qj-ze-nL9"/>
+                            <constraint firstItem="DKP-Xq-BfG" firstAttribute="centerY" secondItem="4PX-Yo-c4N" secondAttribute="centerY" id="20O-Cz-w2i"/>
                             <constraint firstItem="O71-LB-ORQ" firstAttribute="centerY" secondItem="vzg-tF-ik4" secondAttribute="centerY" id="4OM-ih-0Bc"/>
+                            <constraint firstItem="DKP-Xq-BfG" firstAttribute="centerX" secondItem="Vdy-Be-emk" secondAttribute="centerX" constant="80" id="BU8-Nh-Jka"/>
                             <constraint firstItem="1TA-8g-JjN" firstAttribute="top" secondItem="vzg-tF-ik4" secondAttribute="bottom" constant="5" id="aeL-Dr-RyS"/>
                             <constraint firstItem="vzg-tF-ik4" firstAttribute="leading" secondItem="Vdy-Be-emk" secondAttribute="leading" constant="10" id="bDJ-W4-57D"/>
                             <constraint firstItem="1TA-8g-JjN" firstAttribute="leading" secondItem="Vdy-Be-emk" secondAttribute="leading" constant="10" id="h4L-gy-jDO"/>
@@ -640,6 +657,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="AaronsIdeaItWasBad" width="1300" height="968"/>
         <image name="Current Bar" width="640" height="1136"/>
         <image name="blizzard" width="1100" height="619"/>
         <image name="currentFrame" width="798" height="130"/>
@@ -653,7 +671,7 @@
         <image name="tornado" width="1210" height="680"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="RVu-4I-WD7"/>
-        <segue reference="oJ3-nr-fT3"/>
+        <segue reference="9zg-gr-3l6"/>
+        <segue reference="noX-CW-XWL"/>
     </inferredMetricsTieBreakers>
 </document>
