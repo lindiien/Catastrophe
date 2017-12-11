@@ -75,11 +75,13 @@ class DisasterTypeViewController: UIViewController {
             self.dataLabelOne.text = """
             Learn what supplies you should prepare ahead and how to plan for disaster debris.  Get tornado facts and learn the conditions to stay alert for. Find out how to shelter in different structures or even if you’re outside. Learn how to stay safe, inspect the damage, and clean up after a tornado.( https://www.epa.gov/natural-disasters/tornadoes)
             """
-        } else if self.selection == "Tsunami" {
+        } else if self.selection == "Blizzard" {
             self.dataLabelOne.text = """
-            Find out how to protect yourself and your family before a tsunami. Learn how to make a family communication plan and what the warning signs are.  (https://www.ready.gov/tsunamis)
+            A winter storm occurs when there is significant precipitation and the temperature is low enough that precipitation forms as sleet or snow, or when rain turns to ice. A winter storm can range from freezing rain and ice, to moderate snowfall over a few hours, to a blizzard that lasts for several days. Many winter storms are accompanied by dangerously low temperatures.
             
-            Learn how the Tsunami Warning System works and how to respond. (https://www.cdc.gov/disasters/tsunamis/index.html)  
+            Winter storms can cause power outages that last for days. They can make roads and walkways extremely dangerous or impassable and close or limit critical community services such as public transportation, child care, health programs and schools. Injuries and deaths may occur from exposure, dangerous road conditions, and carbon monoxide poisoning and other conditions.
+            
+            https://www.ready.gov/winter-weather
             """
         }
     }

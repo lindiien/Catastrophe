@@ -59,7 +59,7 @@ class EventTypeViewController: UIViewController {
     }
     
     @IBAction func tsunamiButtonPressed(_ sender: Any) {
-        self.selectionString = "Tsunami"
+        self.selectionString = "Blizzard"
         self.performSegue(withIdentifier: "disasterTypeSelectedSegue", sender: self)
     }
     

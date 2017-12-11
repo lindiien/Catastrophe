@@ -233,7 +233,7 @@
                                     <constraint firstAttribute="width" constant="140" id="QLt-yR-dLo"/>
                                     <constraint firstAttribute="height" constant="140" id="xeN-JM-ffs"/>
                                 </constraints>
-                                <state key="normal" image="tsunami"/>
+                                <state key="normal" image="blizzard"/>
                                 <connections>
                                     <action selector="tsunamiButtonPressed:" destination="gAT-Vf-TxS" eventType="touchUpInside" id="dCu-d9-OJj"/>
                                 </connections>
@@ -248,7 +248,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tsunami" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsD-Ff-kGE">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blizzard" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NsD-Ff-kGE">
                                 <rect key="frame" x="192" y="547" width="140" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Cb6-EV-feD"/>
@@ -397,7 +397,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What's coming?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcR-BH-t8e">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PcR-BH-t8e">
                                 <rect key="frame" x="10" y="20" width="355" height="50"/>
                                 <color key="backgroundColor" red="0.13437523849999999" green="0.62681809290000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -641,6 +641,7 @@
     </scenes>
     <resources>
         <image name="Current Bar" width="640" height="1136"/>
+        <image name="blizzard" width="1100" height="619"/>
         <image name="currentFrame" width="798" height="130"/>
         <image name="delivery" width="500" height="504"/>
         <image name="earthquake" width="570" height="288"/>
@@ -650,10 +651,9 @@
         <image name="marshmellow" width="480" height="360"/>
         <image name="pickup" width="522" height="520"/>
         <image name="tornado" width="1210" height="680"/>
-        <image name="tsunami" width="800" height="530"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="RVu-4I-WD7"/>
-        <segue reference="Naz-Fy-RGL"/>
+        <segue reference="oJ3-nr-fT3"/>
     </inferredMetricsTieBreakers>
 </document>
